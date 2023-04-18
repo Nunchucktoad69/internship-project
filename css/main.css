@@ -342,3 +342,13 @@ FOOTER
   font-size: 1.6rem;
   margin-bottom: 2.4rem;
 }
+
+/* *************************************** */
+/* About US */
+
+.carousel-item {
+  height: 32rem;
+  background: #fff;
+  background-position: center;
+  background-size: cover;
+}
