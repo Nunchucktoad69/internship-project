@@ -15,12 +15,6 @@
   /* padding-bottom: 3.2rem; */
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .logo {
   height: 9.6rem;
 }
@@ -29,6 +23,15 @@ nav {
   /* max-width: 120rem; */
   margin: 0 auto;
   padding: 2rem 3.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.nav-container.sticky {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.075);
 }
 
 .header-container {
