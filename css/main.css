@@ -31,7 +31,7 @@
 
 .nav-container.sticky {
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.075);
+  background-color: rgba(0, 0, 0);
 }
 
 .header-container {
@@ -86,11 +86,6 @@ h1 {
 /* PROGRAMS */
 /* ********* */
 
-.section-programs {
-  padding: 9.6rem 0;
-  border-bottom: red;
-}
-
 .program-heading-box {
   display: flex;
   justify-content: left;
@@ -126,10 +121,6 @@ h1 {
 /* *********  */
 /* Membership */
 /* ********* */
-
-.section-memberships {
-  /* padding: 9.6rem 0; */
-}
 
 .plans-container {
   column-gap: 3rem !important;
