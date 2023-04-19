@@ -1,0 +1,255 @@
+/* .carousel .carousel-item {
+  max-height: 550px;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  max-height: 550px;
+} */
+
+/* .contain {
+  padding: 20px;
+} */
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../assets/fonts/bebas-neue-thin.otf");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../assets/fonts/bebas-neue-light.otf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../assets/fonts/bebas-neue-regular.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../assets/fonts/bebas-neue-bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 2px solid red; */
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  line-height: 1;
+  font-weight: 400;
+  background-color: #111;
+  color: #fff;
+}
+
+.heading-secondary {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 1.2;
+  margin-top: 3.2rem;
+  margin-bottom: 4.5rem;
+  text-align: center;
+  color: #fe9b09;
+}
+
+.about-text {
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 5rem;
+  margin-bottom: 9.6rem;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  row-gap: 20rem;
+  column-gap: 4.8rem;
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.pics {
+  margin-top: 4.8rem;
+}
+.about-img {
+  border-radius: 100px;
+  width: 50%;
+  height: 100%;
+  transition: all 0.4s;
+}
+
+.about-img:hover {
+  transform: scale(1.1);
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+.staff-element {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.staff-name {
+  font-size: 1.8rem;
+}
+
+.staff-prof {
+  font-size: 1.6rem;
+}
+
+/*
+FOOTER
+*/
+
+.logo {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+.footer {
+  margin-top: 9.6rem;
+  padding: 12.8rem 0;
+  background-color: rgb(55, 56, 61, 0.5);
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1fr 1.5fr;
+}
+
+.footer-logo-text {
+  display: block;
+  margin-bottom: 3.2rem;
+  font-size: 3.6rem;
+  text-decoration: none;
+  color: white;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.social-links {
+  list-style: none;
+
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #fe9b09;
+}
+
+.copy-rights {
+  margin-top: 3.2rem;
+  font-size: 1.2rem;
+}
+
+.col-two-content {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.col-two-link,
+.col-three-link {
+  text-decoration: none;
+  color: white;
+
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.col-three-link {
+  margin-bottom: 4.8rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: white;
+}
+.address {
+  font-size: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+
+/* ****************************** */
+/* Contact Us */
+.hero-img {
+  height: 50vh;
+  position: relative;
+  background-image: linear-gradient(
+      rgba(32, 32, 32, 0.6),
+      rgba(14, 13, 13, 0.6)
+    ),
+    url(/img/luis-vidal-FodEsaNZs48-unsplash.jpg);
+  background-size: contain;
+  /* padding-bottom: 3.2rem; */
+}
+
+.contact {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-txt {
+  top: 70%;
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+/* newsletter */
+.newsletter {
+  margin-top: 9.6rem;
+  padding: 12.8rem;
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  border-radius: 11px;
+}
+
+.newsletter form {
+  display: flex;
+  gap: 2.4rem;
+  flex-direction: column;
+}
