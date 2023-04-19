@@ -15,6 +15,11 @@
   /* padding-bottom: 3.2rem; */
 }
 
+.sticky .header {
+  position: fixed;
+  background-color: #000;
+}
+
 .logo {
   height: 9.6rem;
 }
@@ -29,18 +34,21 @@
   z-index: 100;
 }
 
-.nav-container.sticky {
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.075);
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: linear-gradient(
+      rgba(32, 32, 32, 0.6),
+      rgba(14, 13, 13, 0.6)
+    ),
+    url(/imgs/test/hero.jpg);
+  background-size: cover;
 }
 
-.header-container {
-  max-width: 120rem;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-
+.hero-text {
   text-align: center;
 }
 
@@ -86,11 +94,6 @@ h1 {
 /* PROGRAMS */
 /* ********* */
 
-.section-programs {
-  padding: 9.6rem 0;
-  border-bottom: red;
-}
-
 .program-heading-box {
   display: flex;
   justify-content: left;
@@ -126,10 +129,6 @@ h1 {
 /* *********  */
 /* Membership */
 /* ********* */
-
-.section-memberships {
-  /* padding: 9.6rem 0; */
-}
 
 .plans-container {
   column-gap: 3rem !important;

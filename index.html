@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -21,49 +22,48 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script defer src="./js/main.js"></script>
   </head>
   <body>
     <header class="header">
       <nav class="nav-container">
-        <!-- <div> -->
-          <!-- <a href="#"> -->
-            <img class="logo" alt="Powerzone logo" src="imgs/logopng.png" />
-          <!-- </a> -->
-        <!-- </div> -->
-        <!-- <div> -->
-          <ul class="header-nav-list">
-            <li>
-              <a class="header-nav-link caps" href="#section--1">Programs</a>
-            </li>
-            <li>
-              <a class="header-nav-link caps" href="#section--2"
-                >Memberships</a
-              >
-            </li>
-            <li>
-              <a class="header-nav-link caps" href="#section--3"
-                >Testimonials</a
-              >
-            </li>
-            <li>
-              <a class="header-nav-link caps" href="#about-us">About us</a>
-            </li>
-            <li><a class="header-nav-link caps" href="#contact-us">Contact us</a></li>
-          </ul>
-        <!-- </div> -->
-      </nav>
+        <img class="logo" alt="Powerzone logo" src="imgs/logopng.png" />
 
-      <div class="header-container">
-        <h1 class="caps">Believe</h1>
-        <p class="header-text">
-          The man who think they can and the man who think they can't, are both
-          right
-        </p>
-      </div>
+        <ul class="header-nav-list">
+          <li>
+            <a class="header-nav-link caps" href="#section--1">Programs</a>
+          </li>
+          <li>
+            <a class="header-nav-link caps" href="#section--2">Memberships</a>
+          </li>
+          <li>
+            <a class="header-nav-link caps" href="#section--3">Testimonials</a>
+          </li>
+          <li>
+            <a class="header-nav-link caps" href="#about-us">About us</a>
+          </li>
+          <li>
+            <a class="header-nav-link caps" href="#contact-us">Contact us</a>
+          </li>
+          <li>
+            <a class="header-nav-link btn--full btn caps" href="#">join now</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-      <section class="section-programs" id="section--1">
+      <section class="hero" id="section--0">
+        <div class="hero-text">
+          <h1 class="caps">Believe</h1>
+          <p class="header-text">
+            The man who think they can and the man who think they can't, are
+            both right
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="section--1">
         <div class="container">
           <span class="subheading">Our programs</span>
           <p class="heading-secondary">Beginner? We got you covered</p>
@@ -84,13 +84,13 @@
             </p>
           </div>
           <div class="program-img-box">
-            <img src="/imgs/test/strength.jpg" class="program-img" alt="" />
+            <img src="/imgs/test/personal.jpg" class="program-img" alt="" />
           </div>
 
           <!-- 02 -->
 
           <div class="program-img-box">
-            <img src="/imgs/test/strength.jpg" class="program-img" alt="" />
+            <img src="/imgs/test/personal.jpg" class="program-img" alt="" />
           </div>
           <div class="program-text-box">
             <div class="program-heading-box">
@@ -121,13 +121,13 @@
             </p>
           </div>
           <div class="program-img-box">
-            <img src="/imgs/test/strength.jpg" class="program-img" alt="" />
+            <img src="/imgs/test/personal.jpg" class="program-img" alt="" />
           </div>
 
           <!-- 04 -->
 
           <div class="program-img-box">
-            <img src="/imgs/test/strength.jpg" class="program-img" alt="" />
+            <img src="/imgs/test/personal.jpg" class="program-img" alt="" />
           </div>
           <div class="program-text-box">
             <div class="program-heading-box">
@@ -158,13 +158,13 @@
             </p>
           </div>
           <div class="program-img-box">
-            <img src="/imgs/test/strength.jpg" class="program-img" alt="" />
+            <img src="/imgs/test/personal.jpg" class="program-img" alt="" />
           </div>
 
           <!-- 06 -->
 
           <div class="program-img-box">
-            <img src="/imgs/test/strength.jpg" class="program-img" alt="" />
+            <img src="/imgs/test/personal.jpg" class="program-img" alt="" />
           </div>
           <div class="program-text-box">
             <div class="program-heading-box">
@@ -194,12 +194,12 @@
             </p>
           </div>
           <div class="program-img-box">
-            <img src="/imgs/test/strength.jpg" class="program-img" alt="" />
+            <img src="/imgs/test/personal.jpg" class="program-img" alt="" />
           </div>
         </div>
       </section>
 
-      <section class="section-memberships" id="section--2">
+      <section class="section" id="section--2">
         <div class="container">
           <span class="subheading">MEMBERSHIP</span>
           <p class="heading-secondary">
@@ -262,7 +262,7 @@
         </div>
       </section>
 
-      <section class="section-testimonials" id="section--3">
+      <section class="section" id="section--3">
         <div class="container">
           <span class="subheading">TESTIMONIALS</span>
           <p class="heading-secondary">Reviews of our gym members</p>
@@ -274,20 +274,20 @@
               <div class="testimonial-review">
                 <div class="testimonial-stars">
                   <span class="testimonial-star"
-                    ><ion-icon class="star-icon" name="star"></ion-icon></ion-icon
-                  ></span>
+                    ><ion-icon class="star-icon" name="star"
+                  /></span>
                   <span class="testimonial-star"
-                    ><ion-icon class="star-icon" name="star"></ion-icon></ion-icon
-                  ></span>
+                    ><ion-icon class="star-icon" name="star"
+                  /></span>
                   <span class="testimonial-star"
-                    ><ion-icon class="star-icon" name="star"></ion-icon></ion-icon
-                  ></span>
+                    ><ion-icon class="star-icon" name="star"
+                  /></span>
                   <span class="testimonial-star"
-                    ><ion-icon class="star-icon" name="star"></ion-icon></ion-icon
-                  ></span>
-                  <span class="testimonial-star"
-                    ><ion-icon class="star-icon" name="star"></ion-icon></ion-icon
-                  ></span>
+                    ><ion-icon class="star-icon" name="star"
+                  /></span>
+                  <span class="testimonial-star">
+                    <ion-icon class="star-icon" name="star"
+                  /></span>
                 </div>
                 <div class="testimonial-text-container">
                   <span class="testimonial-text">
@@ -303,7 +303,7 @@
                   <span class="testimonial-user-img">
                     <img src="imgs/unnamed.png" class="test-img" />
                   </span>
-                    <span class="test-user">Dominic Thirshatha</span>
+                  <span class="test-user">Dominic Thirshatha</span>
                 </div>
               </div>
             </div>
@@ -314,20 +314,20 @@
               <div class="testimonial-review">
                 <div class="testimonial-stars">
                   <span class="testimonial-star"
-                    ><ion-icon class="star-icon" name="star"></ion-icon></ion-icon
-                  ></span>
+                    ><ion-icon class="star-icon" name="star" />
+                  </span>
                   <span class="testimonial-star"
-                    ><ion-icon class="star-icon" name="star"></ion-icon></ion-icon
-                  ></span>
+                    ><ion-icon class="star-icon" name="star" />
+                  </span>
                   <span class="testimonial-star"
-                    ><ion-icon class="star-icon" name="star"></ion-icon></ion-icon
-                  ></span>
+                    ><ion-icon class="star-icon" name="star" />
+                  </span>
                   <span class="testimonial-star"
-                    ><ion-icon class="star-icon" name="star"></ion-icon></ion-icon
-                  ></span>
+                    ><ion-icon class="star-icon" name="star" />
+                  </span>
                   <span class="testimonial-star"
-                    ><ion-icon class="star-icon" name="star"></ion-icon></ion-icon
-                  ></span>
+                    ><ion-icon class="star-icon" name="star" />
+                  </span>
                 </div>
                 <div class="testimonial-text-container">
                   <span class="testimonial-text">
@@ -343,7 +343,7 @@
                   <span class="testimonial-user-img">
                     <img src="imgs/unnamed.png" class="test-img" />
                   </span>
-                    <span class="test-user">Dominic Thirshatha</span>
+                  <span class="test-user">Dominic Thirshatha</span>
                 </div>
               </div>
             </div>
@@ -354,20 +354,20 @@
               <div class="testimonial-review">
                 <div class="testimonial-stars">
                   <span class="testimonial-star"
-                    ><ion-icon class="star-icon" name="star"></ion-icon></ion-icon
-                  ></span>
+                    ><ion-icon class="star-icon" name="star" />
+                  </span>
                   <span class="testimonial-star"
-                    ><ion-icon class="star-icon" name="star"></ion-icon></ion-icon
-                  ></span>
+                    ><ion-icon class="star-icon" name="star" />
+                  </span>
                   <span class="testimonial-star"
-                    ><ion-icon class="star-icon" name="star"></ion-icon></ion-icon
-                  ></span>
+                    ><ion-icon class="star-icon" name="star" />
+                  </span>
                   <span class="testimonial-star"
-                    ><ion-icon class="star-icon" name="star"></ion-icon></ion-icon
-                  ></span>
+                    ><ion-icon class="star-icon" name="star" />
+                  </span>
                   <span class="testimonial-star"
-                    ><ion-icon class="star-icon" name="star"></ion-icon></ion-icon
-                  ></span>
+                    ><ion-icon class="star-icon" name="star" />
+                  </span>
                 </div>
                 <div class="testimonial-text-container">
                   <span class="testimonial-text">
@@ -383,7 +383,7 @@
                   <span class="testimonial-user-img">
                     <img src="imgs/unnamed.png" class="test-img" />
                   </span>
-                    <span class="test-user">Dominic Thirshatha</span>
+                  <span class="test-user">Dominic Thirshatha</span>
                 </div>
               </div>
             </div>
@@ -425,7 +425,9 @@
           </ul>
         </div>
         <div class="col-three">
-          <p class="col-three-link"> <a href="#contact-us" class="col-two-link">Contact Us</a></p>
+          <p class="col-three-link">
+            <a href="#contact-us" class="col-two-link">Contact Us</a>
+          </p>
           <address class="contacts">
             <p class="address">
               Mukti Enclave :19/20, Manapakkam Main Rd, Manapakkam, Chennai,
@@ -439,6 +441,5 @@
         </div>
       </div>
     </footer>
-    <script src= "js/main.js"></script>
   </body>
 </html>
